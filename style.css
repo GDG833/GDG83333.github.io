@@ -1,0 +1,478 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑", "PingFang SC", sans-serif;
+}
+
+/* 容器样式 */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 导航栏样式 */
+.navbar {
+    background-color: #1e5ea8; /* 校园蓝主色调 */
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700; /* 金色高亮 */
+}
+
+/* 首页横幅 */
+.hero {
+    background: linear-gradient(135deg, #1e5ea8, #2a7bc8);
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* 通用按钮样式 */
+.btn {
+    padding: 0.8rem 2rem;
+    background-color: #ffd700;
+    color: #1e5ea8;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffc107;
+    transform: translateY(-2px);
+}
+
+/* 通用模块样式 */
+.section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    color: #1e5ea8;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #ffd700;
+    margin: 0.8rem auto;
+}
+
+/* 1. 书目查询模块 */
+.book-search {
+    background-color: #f8f9fa;
+}
+
+.grade-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.grade-btn {
+    padding: 0.6rem 1.5rem;
+    background-color: #e9ecef;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.grade-btn.active {
+    background-color: #1e5ea8;
+    color: white;
+}
+
+.grade-btn:hover:not(.active) {
+    background-color: #dee2e6;
+}
+
+.book-list {
+    margin-top: 1rem;
+}
+
+.book-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.book-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-card h3 {
+    color: #1e5ea8;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.book-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.book-link {
+    display: inline-block;
+    color: #1e5ea8;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 1px solid #1e5ea8;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.book-link:hover {
+    background-color: #1e5ea8;
+    color: white;
+}
+
+/* 2. 读后感留言模块 */
+.message {
+    background-color: white;
+}
+
+.message-form {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-btn {
+    margin-top: 1rem;
+}
+
+.message-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.message-list h3 {
+    color: #1e5ea8;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.message-item {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #1e5ea8;
+}
+
+.message-author {
+    font-weight: bold;
+    color: #1e5ea8;
+    margin-bottom: 0.5rem;
+}
+
+.message-content {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 3. 思维导图上传模块 */
+.upload {
+    background-color: #f8f9fa;
+}
+
+.upload-box {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.upload-tips {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.upload-file input {
+    padding: 0.5rem;
+}
+
+.works-list {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.works-list h3 {
+    color: #1e5ea8;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.works-item {
+    text-align: center;
+}
+
+.works-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 0.8rem;
+}
+
+.works-item p {
+    color: #333;
+    font-weight: 500;
+}
+
+/* 4. 问卷调查模块 */
+.survey {
+    background-color: white;
+}
+
+.survey-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.survey-question {
+    margin-bottom: 2rem;
+}
+
+.survey-question p {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.survey-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.survey-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+/* 5. 阅读测评模块 */
+.test {
+    background-color: #f8f9fa;
+}
+
+.test-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.test-tips {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.test-question {
+    margin-bottom: 2rem;
+}
+
+.test-question p {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.test-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.test-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+.test-result {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #1e5ea8;
+}
+
+.test-result h3 {
+    color: #1e5ea8;
+    margin-bottom: 1rem;
+}
+
+#score {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* 页脚样式 */
+.footer {
+    background-color: #1e5ea8;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* 响应式适配（手机端） */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .section {
+        padding: 2.5rem 0;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .book-items {
+        grid-template-columns: 1fr;
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+}

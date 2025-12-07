@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星满天在线书屋 - 百色市右江区第六初级中学</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入图标库 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">
+                <i class="bi bi-book-star"></i> 星满天在线书屋
+            </h1>
+            <ul class="nav-links">
+                <li><a href="#book-search">书目查询</a></li>
+                <li><a href="#message">读后感留言</a></li>
+                <li><a href="#upload">思维导图上传</a></li>
+                <li><a href="#survey">阅读体验问卷</a></li>
+                <li><a href="#test">阅读测评</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页横幅 -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h2>书香满校园 · 阅读伴成长</h2>
+            <p>百色市右江区第六初级中学 - 星满天在线书屋</p>
+            <a href="#book-search" class="btn">开始阅读探索</a>
+        </div>
+    </header>
+
+    <!-- 1. 书目查询模块 -->
+    <section id="book-search" class="section book-search">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="bi bi-search"></i> 部编版语文推荐书目查询
+            </h2>
+            <div class="grade-tabs">
+                <button class="grade-btn active" data-grade="7">七年级</button>
+                <button class="grade-btn" data-grade="8">八年级</button>
+                <button class="grade-btn" data-grade="9">九年级</button>
+            </div>
+            <div class="book-list">
+                <!-- 七年级书目 -->
+                <div class="book-items" data-grade="7">
+                    <div class="book-card">
+                        <h3>《朝花夕拾》- 鲁迅</h3>
+                        <p>内容简介：记录了鲁迅从童年到青年时期的生活道路和心路历程，多侧面地反映了作者青少年时期的生活，形象地反映了他的性格和志趣的形成经过。</p>
+                        <a href="https://search.dangdang.com/?key=朝花夕拾 部编版" target="_blank" class="book-link">当当网购买链接</a>
+                    </div>
+                    <div class="book-card">
+                        <h3>《西游记》- 吴承恩</h3>
+                        <p>内容简介：中国古典四大名著之一，讲述了唐僧师徒四人西天取经，历经九九八十一难的传奇故事，充满奇幻色彩和深刻的人生哲理。</p>
+                        <a href="https://search.dangdang.com/?key=西游记 部编版 七年级" target="_blank" class="book-link">当当网购买链接</a>
+                    </div>
+                    <div class="book-card">
+                        <h3>《骆驼祥子》- 老舍</h3>
+                        <p>内容简介：描述了20世纪20年代北京一个普通人力车夫的悲惨命运，反映了旧中国底层人民的苦难生活。</p>
+                        <a href="https://search.dangdang.com/?key=骆驼祥子 部编版" target="_blank" class="book-link">当当网购买链接</a>
+                    </div>
+                </div>
+                <!-- 八年级书目 -->
+                <div class="book-items" data-grade="8" style="display: none;">
+                    <div class="book-card">
+                        <h3>《红星照耀中国》- 埃德加·斯诺</h3>
+                        <p>内容简介：真实记录了埃德加·斯诺1936年6月至10月在中国西北革命根据地的所见所闻，向全世界报道了中国共产党和红军的真实情况。</p>
+                        <a href="https://search.dangdang.com/?key=红星照耀中国 部编版 八年级" target="_blank" class="book-link">当当网购买链接</a>
+                    </div>
+                    <div class="book-card">
+                        <h3>《昆虫记》- 法布尔</h3>
+                        <p>内容简介：一部概括昆虫的种类、特征、习性和婚习的昆虫生物学著作，记录了昆虫真实的生活，展现了昆虫为生存而斗争时表现出的灵性。</p>
+                        <a href="https://search.dangdang.com/?key=昆虫记 部编版 八年级" target="_blank" class="book-link">当当网购买链接</a>
+                    </div>
+                    <div class="book-card">
+                        <h3>《傅雷家书》- 傅雷</h3>
+                        <p>内容简介：收录了傅雷夫妇写给儿子傅聪的家信，字里行间充满了父亲对儿子的挚爱、期望，以及对国家和世界的高尚情感。</p>
+                        <a href="https://search.dangdang.com/?key=傅雷家书 部编版" target="_blank" class="book-link">当当网购买链接</a>
+                    </div>
+                </div>
+                <!-- 九年级书目 -->
+                <div class="book-items" data-grade="9" style="display: none;">
+                    <div class="book-card">
+                        <h3>《水浒传》- 施耐庵</h3>
+                        <p>内容简介：中国古典四大名著之一，描写了北宋末年以宋江为首的108位好汉在梁山起义，以及接受招安后为宋朝征战的故事。</p>
+                        <a href="https://search.dangdang.com/?key=水浒传 部编版 九年级" target="_blank" class="book-link">当当网购买链接</a>
+                    </div>
+                    <div class="book-card">
+                        <h3>《简·爱》- 夏洛蒂·勃朗特</h3>
+                        <p>内容简介：讲述了简·爱从小失去父母，在各种磨难中不断追求自由与尊严，最终获得幸福的故事，展现了女性独立自强的形象。</p>
+                        <a href="https://search.dangdang.com/?key=简爱 部编版 九年级" target="_blank" class="book-link">当当网购买链接</a>
+                    </div>
+                    <div class="book-card">
+                        <h3>《格列佛游记》- 斯威夫特</h3>
+                        <p>内容简介：通过格列佛在小人国、大人国、飞岛国、慧骃国的奇遇，反映了18世纪前半期英国统治阶级的腐败和罪恶。</p>
+                        <a href="https://search.dangdang.com/?key=格列佛游记 部编版" target="_blank" class="book-link">当当网购买链接</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. 读后感留言模块 -->
+    <section id="message" class="section message">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="bi bi-pen"></i> 读后感 & 好书推荐
+            </h2>
+            <form id="message-form" class="message-form">
+                <div class="form-group">
+                    <label for="name">姓名（班级）：</label>
+                    <input type="text" id="name" placeholder="例如：张三（九1班）" required>
+                </div>
+                <div class="form-group">
+                    <label for="book-name">相关书籍：</label>
+                    <input type="text" id="book-name" placeholder="例如：《朝花夕拾》" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">留言内容：</label>
+                    <textarea id="content" rows="6" placeholder="请写下你的读后感或推荐理由..." required></textarea>
+                </div>
+                <button type="submit" class="btn form-btn">提交留言</button>
+            </form>
+            <!-- 留言展示区（示例） -->
+            <div class="message-list">
+                <h3>精选留言</h3>
+                <div class="message-item">
+                    <p class="message-author">李四（七2班） - 《西游记》</p>
+                    <p class="message-content">《西游记》里孙悟空的勇敢和坚持让我印象深刻，遇到困难不放弃，最终才能取得真经，这让我明白了学习也要有这种精神！</p>
+                </div>
+                <div class="message-item">
+                    <p class="message-author">王五（八3班） - 《昆虫记》</p>
+                    <p class="message-content">法布尔观察昆虫的耐心太让人佩服了，原来小小的昆虫世界有这么多奥秘，我也开始喜欢观察身边的自然了！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 思维导图上传模块 -->
+    <section id="upload" class="section upload">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="bi bi-image"></i> 思维导图作品上传
+            </h2>
+            <div class="upload-box">
+                <p class="upload-tips">请上传阅读相关的思维导图（支持JPG/PNG格式，大小不超过5MB）</p>
+                <form id="upload-form">
+                    <div class="form-group">
+                        <label for="upload-name">姓名（班级）：</label>
+                        <input type="text" id="upload-name" placeholder="例如：赵六（九2班）" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="upload-book">对应书籍：</label>
+                        <input type="text" id="upload-book" placeholder="例如：《水浒传》" required>
+                    </div>
+                    <div class="form-group upload-file">
+                        <label for="file">选择图片：</label>
+                        <input type="file" id="file" accept="image/jpeg,image/png" required>
+                    </div>
+                    <button type="submit" class="btn form-btn">上传作品</button>
+                </form>
+            </div>
+            <!-- 作品展示区 -->
+            <div class="works-list">
+                <h3>优秀思维导图展示</h3>
+                <div class="works-grid">
+                    <div class="works-item">
+                        <img src="https://picsum.photos/300/200?random=1" alt="《西游记》思维导图">
+                        <p>《西游记》 - 七1班 小明</p>
+                    </div>
+                    <div class="works-item">
+                        <img src="https://picsum.photos/300/200?random=2" alt="《简·爱》思维导图">
+                        <p>《简·爱》 - 九3班 小红</p>
+                    </div>
+                    <div class="works-item">
+                        <img src="https://picsum.photos/300/200?random=3" alt="《昆虫记》思维导图">
+                        <p>《昆虫记》 - 八2班 小刚</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 阅读体验问卷模块 -->
+    <section id="survey" class="section survey">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="bi bi-clipboard-check"></i> 阅读体验问卷调查
+            </h2>
+            <form id="survey-form" class="survey-form">
+                <!-- 问题1 -->
+                <div class="survey-question">
+                    <p>1. 你平均每周阅读课外书籍的时间是？</p>
+                    <div class="survey-options">
+                        <label><input type="radio" name="q1" value="少于1小时" required> 少于1小时</label>
+                        <label><input type="radio" name="q1" value="1-3小时"> 1-3小时</label>
+                        <label><input type="radio" name="q1" value="3-5小时"> 3-5小时</label>
+                        <label><input type="radio" name="q1" value="5小时以上"> 5小时以上</label>
+                    </div>
+                </div>
+                <!-- 问题2 -->
+                <div class="survey-question">
+                    <p>2. 你最喜欢的阅读场所是？</p>
+                    <div class="survey-options">
+                        <label><input type="radio" name="q2" value="学校图书馆" required> 学校图书馆</label>
+                        <label><input type="radio" name="q2" value="教室图书角"> 教室图书角</label>
+                        <label><input type="radio" name="q2" value="家里"> 家里</label>
+                        <label><input type="radio" name="q2" value="其他"> 其他</label>
+                    </div>
+                </div>
+                <!-- 问题3 -->
+                <div class="survey-question">
+                    <p>3. 你认为学校的阅读活动是否丰富？</p>
+                    <div class="survey-options">
+                        <label><input type="radio" name="q3" value="非常丰富" required> 非常丰富</label>
+                        <label><input type="radio" name="q3" value="一般"> 一般</label>
+                        <label><input type="radio" name="q3" value="较少"> 较少</label>
+                        <label><input type="radio" name="q3" value="没有"> 没有</label>
+                    </div>
+                </div>
+                <!-- 问题4 -->
+                <div class="survey-question">
+                    <p>4. 你希望学校增加哪些阅读相关活动？（可多选）</p>
+                    <div class="survey-options">
+                        <label><input type="checkbox" name="q4" value="读书分享会"> 读书分享会</label>
+                        <label><input type="checkbox" name="q4" value="作家进校园"> 作家进校园</label>
+                        <label><input type="checkbox" name="q4" value="阅读竞赛"> 阅读竞赛</label>
+                        <label><input type="checkbox" name="q4" value="图书漂流"> 图书漂流</label>
+                    </div>
+                </div>
+                <!-- 问题5 -->
+                <div class="survey-question">
+                    <p>5. 对学校在线书屋的建议：</p>
+                    <textarea name="q5" rows="4" placeholder="请写下你的建议..."></textarea>
+                </div>
+                <button type="submit" class="btn form-btn">提交问卷</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 5. 阅读测评模块 -->
+    <section id="test" class="section test">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="bi bi-journal-check"></i> 阅读知识测评
+            </h2>
+            <div class="test-box">
+                <p class="test-tips">请完成以下选择题，每题只有一个正确答案</p>
+                <form id="test-form" class="test-form">
+                    <!-- 题目1 -->
+                    <div class="test-question">
+                        <p>1. 《朝花夕拾》中，《从百草园到三味书屋》描写的是作者的（）生活？</p>
+                        <div class="test-options">
+                            <label><input type="radio" name="t1" value="A" required> A. 童年</label>
+                            <label><input type="radio" name="t1" value="B"> B. 青年</label>
+                            <label><input type="radio" name="t1" value="C"> C. 中年</label>
+                            <label><input type="radio" name="t1" value="D"> D. 老年</label>
+                        </div>
+                    </div>
+                    <!-- 题目2 -->
+                    <div class="test-question">
+                        <p>2. 《西游记》中，唐僧的法号是（）？</p>
+                        <div class="test-options">
+                            <label><input type="radio" name="t2" value="A" required> A. 悟空</label>
+                            <label><input type="radio" name="t2" value="B"> B. 玄奘</label>
+                            <label><input type="radio" name="t2" value="C"> C. 悟能</label>
+                            <label><input type="radio" name="t2" value="D"> D. 悟净</label>
+                        </div>
+                    </div>
+                    <!-- 题目3 -->
+                    <div class="test-question">
+                        <p>3. 《水浒传》中，“及时雨”指的是（）？</p>
+                        <div class="test-options">
+                            <label><input type="radio" name="t3" value="A" required> A. 林冲</label>
+                            <label><input type="radio" name="t3" value="B"> B. 武松</label>
+                            <label><input type="radio" name="t3" value="C"> C. 宋江</label>
+                            <label><input type="radio" name="t3" value="D"> D. 鲁智深</label>
+                        </div>
+                    </div>
+                    <!-- 题目4 -->
+                    <div class="test-question">
+                        <p>4. 《简·爱》的作者是（）？</p>
+                        <div class="test-options">
+                            <label><input type="radio" name="t4" value="A" required> A. 夏洛蒂·勃朗特</label>
+                            <label><input type="radio" name="t4" value="B"> B. 艾米莉·勃朗特</label>
+                            <label><input type="radio" name="t4" value="C"> C. 简·奥斯汀</label>
+                            <label><input type="radio" name="t4" value="D"> D. 狄更斯</label>
+                        </div>
+                    </div>
+                    <!-- 题目5 -->
+                    <div class="test-question">
+                        <p>5. 《昆虫记》中，法布尔重点观察的昆虫不包括（）？</p>
+                        <div class="test-options">
+                            <label><input type="radio" name="t5" value="A" required> A. 蜜蜂</label>
+                            <label><input type="radio" name="t5" value="B"> B. 蜘蛛</label>
+                            <label><input type="radio" name="t5" value="C"> C. 恐龙</label>
+                            <label><input type="radio" name="t5" value="D"> D. 蝉</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn form-btn">提交测评</button>
+                </form>
+                <!-- 测评结果展示 -->
+                <div id="test-result" class="test-result" style="display: none;">
+                    <h3>测评结果</h3>
+                    <p id="score">你的得分：80分（共5题，每题20分）</p>
+                    <p id="correct-answers">正确答案：1.A 2.B 3.C 4.A 5.C</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 百色市右江区第六初级中学 星满天在线书屋 | 校园阅读服务平台</p>
+            <p>联系电话：0776-XXXXXXX | 邮箱：xxxx@163.com</p>
+        </div>
+    </footer>
+
+    <!-- 引入交互脚本 -->
+    <script src="script.js"></script>
+</body>
+</html>
